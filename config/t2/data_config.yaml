@@ -1,0 +1,17 @@
+encoder:
+  clientIP: ZerosEncoder
+  domain: FeatureEncoder
+  length: 384
+  rdata: BertEncoder
+interval: second
+is_enabled: true
+logger:
+  name: second
+  postfix: .log
+  root_dir: ./data/exp/ZerosEncoder-FeatureEncoder-BertEncoder/second/
+  verbosity: 1
+pre_filter: null
+pre_transform: null
+raw_path: ./data/exp/ZerosEncoder-FeatureEncoder-BertEncoder/second/
+sample_rate: 1.0
+transform: null

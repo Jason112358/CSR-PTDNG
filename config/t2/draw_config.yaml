@@ -1,0 +1,46 @@
+dataset2pic:
+  dpi: 300
+  draw_path: output/test/graphs/dataset_pics/
+  edge_colors:
+    request: orange
+    resolve: purple
+  edge_length: '600.0'
+  edge_width: '2.0'
+  figsize:
+  - 30
+  - 30
+  font_color: black
+  font_is_enabled: false
+  font_size: 8
+  is_enabled: false
+  kamada_kawai:
+    dim: 2
+    scale: 1
+  layout: multipartite
+  node_colors:
+    clientIP: red
+    domain: blue
+    rdata: green
+  node_size: 250
+  save: true
+  show: false
+  spring:
+    k: 0.35
+    seed: 42
+  test: false
+embedding2pic:
+  dpi: 300
+  is_enabled: false
+  plt:
+    cmap: viridis
+    colorbar: true
+    title: UMAP Visualization of Graph Embeddings
+  save: true
+  save_path: output/test/graphs/embedding_pics/
+  show: false
+  umap:
+    metric: cosine
+    n_components: 2
+    n_neighbors: 7
+    random_state: 42
+is_enabled: false

@@ -1,0 +1,45 @@
+batch_size: 1024
+check_epoch:
+- 1
+- 25
+- 50
+device: cuda:0
+epochs: 50
+factor: 0.1
+history:
+  content:
+  - train
+  - val
+  - test
+is_enabled: true
+labels:
+- Background
+- cobaltstrike
+- dns_shell
+- dns2tcp
+- dnscat2
+- dnsexfiltrator
+- iodine
+- ozymandns
+load: false
+logger:
+  name: second
+  postfix: .log
+  root_dir: ./output/t2/ZerosEncoder-FeatureEncoder-BertEncoder/second
+  verbosity: 1
+lr: 0.01
+min_lr: 0.0001
+mode: min
+model_config: config/t2/model/
+model_list:
+- GAT
+- GCN
+model_root: models
+patience: 5
+save: true
+save_dir: ./models\t2\ZerosEncoder-FeatureEncoder-BertEncoder
+seed: 42
+task: t2
+test_ratio: 0.1
+train_ratio: 0.8
+val_ratio: 0.1
